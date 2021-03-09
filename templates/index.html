@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wine-Quality Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="text-center container-fluid">
+      <h1 style="color: rgb(248, 228, 192);font-size: 5em;">Welcome to Wine-Quality.com</h1>
+      <p>Plis have Good Wine for a Good Fortune </p> 
+    </div>
+    
+    <div class="container-fluid ">
+      <form onsubmit="CheckQuality()">
+        <div class="row">
+          <div class="col-md-3" id="controls">
+            
+            Fixed acidity:<br>
+            <input type="text" ><br><br>
+            Volatile acidity:<br>
+            <input type="text" placeholder=""><br><br>
+            Citric acid:<br>
+            <input type="text" placeholder=""><br><br>
+            Residual sugar:<br>
+            <input type="text" placeholder=""><br><br>
+
+
+          </div>
+
+          <div class="col-md-3" id="langdiv">
+            Free sulfur dioxide:<br>
+            <input type="text" placeholder=""><br><br>
+            Total sulfur dioxide:<br>
+            <input type="text" placeholder=""><br><br>
+            Density:<br>
+            <input type="text" placeholder=""><br><br>
+            hlorides:<br>
+            <input type="text" placeholder=""><br><br>
+
+          </div>
+
+
+          <div class="col-md-3">
+            pH:<br>
+            <input type="text" placeholder=""><br><br>
+            Sulphates:<br>
+            <input type="text" placeholder=""><br><br>
+            Alcohol:<br>
+            <input type="text" placeholder=""><br><br>
+            <input type="submit" value="Predict Quality"><br><br>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+  <script src="/static/js/script.js"></script>
+</body>
+
+</html>
