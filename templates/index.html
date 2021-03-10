@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wine-Quality Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="text-center container-fluid">
+      <h1 style="color: rgb(248, 228, 192);font-size: 5em;">Welcome to Wine-Quality.com</h1>
+      <p>Plis have Good Wine for a Good Fortune </p> 
+    </div>
+    
+    <div class="container-fluid ">
+      <form>
+        <div class="row">
+          <div class="col-md-3" id="controls">
+            
+            Fixed acidity:<br>
+            <input type="text" id="fixed_acidity" ><br><br>
+            Volatile acidity:<br>
+            <input type="text" id="volatile_acidity" placeholder=""><br><br>
+            Citric acid:<br>
+            <input type="text" id="citric_acid" placeholder=""><br><br>
+            Residual sugar:<br>
+            <input type="text" id="residual_sugar" placeholder=""><br><br>
+
+
+          </div>
+
+          <div class="col-md-3" id="langdiv">
+            Free sulfur dioxide:<br>
+            <input type="text" id="free_sulfur_dioxide" placeholder=""><br><br>
+            Total sulfur dioxide:<br>
+            <input type="text" id="total_sulfur_dioxide" placeholder=""><br><br>
+            Density:<br>
+            <input type="text" id="density" placeholder=""><br><br>
+            Chlorides:<br>
+            <input type="text" id="chlorides" placeholder=""><br><br>
+
+          </div>
+
+
+          <div class="col-md-3">
+            pH:<br>
+            <input type="text" id="pH" placeholder=""><br><br>
+            Sulphates:<br>
+            <input type="text" id="sulphates" placeholder=""><br><br>
+            Alcohol:<br>
+            <input type="text" id="alcohol" placeholder=""><br><br>
+            <input type="button" value="Predict Quality" id="predict" onclick="CheckQuality()"><br><br>
+            <textarea class="col-md-12" id="answer" placeholder="Answer will come here"></textarea>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+  <script src="/static/js/script.js"></script>
+</body>
+
+</html>
